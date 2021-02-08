@@ -1,7 +1,7 @@
 # Today I Learned
 
 ## 웹 디자인
-UIUX  
-Figma  
-Xd  
-PhotoShop  
+1. UIUX  
+2. Figma  
+3. Xd  
+4. PhotoShop  
