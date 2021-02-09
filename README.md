@@ -5,3 +5,8 @@
 * Figma  
 * Xd  
 * PhotoShop  
+
+## JavaScript
+* JavaScript  
+* React  
+* Type  
