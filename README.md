@@ -5,7 +5,7 @@
 * CSS3
 
 ## 웹 디자인
-* [UIUX](UIUX\UIUX.md).  
+* [UIUX](.\UIUX\UIUX.md)
 * Figma  
 * Xd  
 * PhotoShop  
