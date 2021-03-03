@@ -9,7 +9,7 @@
 ```html
 <html>
   <head>
-    <title></title>
+    <title>My WebPage</title>
   </head>
   <body></body>
 </html>
