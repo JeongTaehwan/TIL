@@ -65,6 +65,4 @@ console.log(a);
  console.log(a);
  ```
  - 이렇게 작성하면 값은 true가 나옴.
-=======
-# JavaScript
->>>>>>> bf29ebe4c04363acdd08a1be0cb5810adbba8550
+
