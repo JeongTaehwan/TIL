@@ -276,3 +276,94 @@ console.log(Taehwan._age);
 ```
 
 - 이런식으로 코드를 작성하면 처음의 `console.log`는 초깃값의 18이 나오지만 다시 재정의를 해준 후 출력을 하면 17이 나오게된다.
+
+# 배열👨‍💻
+
+- 여러개의 항목들의 담겨있는 리스트
+- 배열의 `index`값은 `0`부터 시작함
+- `javascript`에서의 배열은 인덱스의 형이 굳이 일치할 필요가 없음
+
+```javascript
+const arr = [1, true, { a: 1 }, 4];
+
+console.log(arr);
+console.log(arr[0]);
+console.log(arr.length);
+```
+
+- 이런식으로 코드를 작성하면 처음 출력한 값은 `[1, true, { a: 1 }, 4]`가 나오고, 두번째 출력 값은
+  `1`이 나온다. 변수명 뒤에 `[]` 를 붙이면 그 `[]` 안의 인덱스 값을 보여준다. 그리고 배열 내장함수인 length는 배열의 길이를 알려준다. 이 코드의 경우 `4`가 출력된다.
+
+# 반복문👨‍💻
+
+- 특정 작업을 반복적으로 사용할 때 사용하는 구문
+
+## For
+
+```javascript
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+```
+
+- 이런 식으로 `For`문을 작성할 수 있다 `()`안의 내용은 `0`으로 초기화한 변수 `i`를 설정한 후 `i`가 `10`보다 작을 떄까지 돌아가며 `1`씩 증가한다는 뜻이다.
+
+```javascript
+const arr = ["태환이는", "매우", "잘생겼다"];
+
+for (let i = 0; i <= arr.length; i++) {
+  console.log(arr[i]);
+}
+```
+
+- 이런 식으로 배열과도 함께 사용할 수 있다.
+
+## While
+
+```javascript
+let handsome = false;
+let i = 0;
+
+while (!handsome) {
+  console.log(i);
+  i++;
+
+  if (i === 18) {
+    handsome = true;
+    console.log("Im Hansome!");
+  }
+}
+```
+
+- 이런식으로 For문의 경우는 보통 숫자가 어느 정도에 도달하면 멈추는 조건을 자주 사용하지만 While문은 주로 어떠한 값의 True 나 False값으로 조건을 사용한다.
+
+## For Of
+
+- 보통 배열을 사용할 때 주로 사용함
+
+```javascript
+const arr = [1, 2, 3, 4, 5];
+
+for (let array of arr) {
+  console.log(array);
+}
+```
+
+- 이런 식으로 코드를 작성하면 1,2,3,4,5가 출력된다.
+
+## For in
+
+- 보통 객체를 사용할 때 주로 사용함
+
+```javascript
+const dog = {
+  name: "Johnny",
+  age: 1,
+};
+
+for (let key in dog) {
+  console.log(`${key} : ${dog[key]}`);
+}
+```
+
+- 이런 식으로 코드를 작성하면 `name: Johnny age: 1`가 출력된다.
