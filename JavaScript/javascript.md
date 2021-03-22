@@ -310,6 +310,8 @@ country.forEach((manycountry) => {
 
 ## Map
 
+- `Map` 은 배열 안의 원소를 변환할 때 사용한다.
+
 ```javascript
 const array = [1, 2, 3, 4, 5];
 
@@ -317,24 +319,67 @@ const squared = array.map((n) => n * n);
 console.log(squared);
 ```
 
-- Map은 배열 안의 원소를 변환할 때 사용한다.
-- 추가적으로 `indexOf` , `findIndex` , `find` 등의 함수가 있다.
-- `indexOf` : 찾고자하는 원소의 위치를 찾을 때 , index값을 반환한다.
-- `findIndex` : 찾고자하는 원소의 위치를 `indexOf`만으로 찾을 수 없을 때 , index값을 반환한다.
-- `find` : 찾은 값을 반환한다.
+- 위의 코드에선 `array` 에 `Map` 함수를 사용하여 제곱시켰으니 `1 , 4 , 9 , 16 , 25` 가 출력된다.
 
-<!-- ## Filter
+## Filter
+
+- `Filter` 함수는 특정 조건을 만족하는 원소들을 찾아 그 원소들을 가지고 새로운 배열을 만드는 함수이다.
 
 ```javascript
+const fruits = [
+  {
+    name: "apple",
+    smell: false,
+  },
 
+  {
+    name: "banana",
+    smell: false,
+  },
+
+  {
+    name: "durian",
+    smell: true,
+  },
+];
+
+const SmellOnOff = fruits.filter((fruits) => fruits.smell === true);
+console.log(SmellOnOff);
 ```
+
+- 이런 식으로 코드를 작성하면 `filter` 함수가 `smell` 의 값이 `true` 인 객체를 꺼내어 새로운 배열을 만들어준다.
 
 ## Splice & Slice
 
-```javascript
+## Splice
 
+- `Splice` 함수는 배열의 어떠한 값부터 지정한 값까지 지워주는 함수이다.
+
+```javascript
+const soccerplayer = ["messi", "ronaldo", "neymar", "pogba", "ramos"];
+
+const index = soccerplayer.indexOf("ronaldo");
+const spliced = soccerplayer.splice(index, 1);
+console.log(soccerplayer);
 ```
 
+- 이런식으로 코드를 작성하면 `indexOf` 로 선택한 `ronaldo` 부터 `1` 칸을 지워주는 것이므로 `["messi", "neymar", "pogba", "ramos"]` 가 출력된다.
+
+## Slice
+
+- `Slice` 함수는 `Splice` 와는 달리 기존의 배열은 건들이지 않고 따로 빼내어 출력한다.
+
+```javascript
+const soccerplayer = ["messi", "ronaldo", "neymar", "pogba", "ramos"];
+
+const sliced = soccerplayer.slice(0, 2);
+console.log(sliced);
+console.log(soccerplayer);
+```
+
+- 이런식으로 코드를 작성하면 `slice`하여 `index[0]`의 값부터 2칸을 자르는 거니까 `["messi", "ronaldo"]` 가 출력되고 기존의 배열은 그대로 출력된다.
+
+<!--
 ## Shift Pop Unshift Push
 
 ```javascript
@@ -343,9 +388,16 @@ console.log(squared);
 
 ## Reduce
 
-```javascript
+````javascript
 
 ``` -->
+
+## Plus +
+
+- 추가적으로 `indexOf` , `findIndex` , `find` 등의 함수가 있다.
+- `indexOf` : 찾고자하는 원소의 위치를 찾을 때 , index값을 반환한다.
+- `findIndex` : 찾고자하는 원소의 위치를 `indexOf` 만으로 찾을 수 없을 때 , index값을 반환한다.
+- `find` : 찾은 값을 반환한다.
 
 # 반복문👨‍💻
 
@@ -431,4 +483,4 @@ for (let i = 0; i <= 10; i++) {
 }
 ```
 
-- 이런 식으로 코드를 작성하면 i가 2를 만났을때 continue를 실행해 다음 동작을 수행하고, i가 7을 만나면 반복문이 멈추게 된다. 즉 결과값은 0,1,3,4,5,7가 된다.
+- 이런 식으로 코드를 작성하면 `i` 가 `2` 를 만났을때 `continue` 를 실행해 다음 동작을 수행하고, `i` 가 `7` 을 만나면 반복문이 멈추게 된다. 즉 결과값은 `0 , 1 , 3 , 4 , 5 , 7 ` 가 된다.
