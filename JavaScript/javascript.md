@@ -294,6 +294,59 @@ console.log(arr.length);
 - 이런식으로 코드를 작성하면 처음 출력한 값은 `[1, true, { a: 1 }, 4]`가 나오고, 두번째 출력 값은
   `1`이 나온다. 변수명 뒤에 `[]` 를 붙이면 그 `[]` 안의 인덱스 값을 보여준다. 그리고 배열 내장함수인 length는 배열의 길이를 알려준다. 이 코드의 경우 `4`가 출력된다.
 
+# 배열 - 2 (내장함수)
+
+## forEach
+
+```javascript
+const country = ["america", "korea", "china", "japan", "france"];
+
+country.forEach((manycountry) => {
+  console.log(manycountry);
+});
+```
+
+- 이런 식으로 forEach문을 사용해 같은 결과를 주는 다른 코드들 보다 더 간결하게 작성할 수 있다.
+
+## Map
+
+```javascript
+const array = [1, 2, 3, 4, 5];
+
+const squared = array.map((n) => n * n);
+console.log(squared);
+```
+
+- Map은 배열 안의 원소를 변환할 때 사용한다.
+- 추가적으로 `indexOf` , `findIndex` , `find` 등의 함수가 있다.
+- `indexOf` : 찾고자하는 원소의 위치를 찾을 때 , index값을 반환한다.
+- `findIndex` : 찾고자하는 원소의 위치를 `indexOf`만으로 찾을 수 없을 때 , index값을 반환한다.
+- `find` : 찾은 값을 반환한다.
+
+<!-- ## Filter
+
+```javascript
+
+```
+
+## Splice & Slice
+
+```javascript
+
+```
+
+## Shift Pop Unshift Push
+
+```javascript
+
+```
+
+## Reduce
+
+```javascript
+
+``` -->
+
 # 반복문👨‍💻
 
 - 특정 작업을 반복적으로 사용할 때 사용하는 구문
@@ -367,3 +420,15 @@ for (let key in dog) {
 ```
 
 - 이런 식으로 코드를 작성하면 `name: Johnny age: 1`가 출력된다.
+
+## Continue Break
+
+```javascript
+for (let i = 0; i <= 10; i++) {
+  if (i === 2) continue;
+  console.log(i);
+  if (i === 7) break;
+}
+```
+
+- 이런 식으로 코드를 작성하면 i가 2를 만났을때 continue를 실행해 다음 동작을 수행하고, i가 7을 만나면 반복문이 멈추게 된다. 즉 결과값은 0,1,3,4,5,7가 된다.
