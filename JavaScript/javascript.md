@@ -284,7 +284,7 @@ console.log(arr.length);
 - 이런식으로 코드를 작성하면 처음 출력한 값은 `[1, true, { a: 1 }, 4]`가 나오고, 두번째 출력 값은
   `1`이 나온다. 변수명 뒤에 `[]` 를 붙이면 그 `[]` 안의 인덱스 값을 보여준다. 그리고 배열 내장함수인 length는 배열의 길이를 알려준다. 이 코드의 경우 `4`가 출력된다.
 
-# 배열 - 2 (내장함수)
+# 배열 - 2 (내장함수)👨‍💻
 
 ## forEach
 
@@ -428,13 +428,42 @@ console.log(girlgroup);
 ```
 
 - 이러한 코드를 작성하면 `push` 함수가 발동되어 배열의 맨 뒤에 `"브레이브걸스"` 라는 값이 추가되어 출력되게 된다.
-<!--
+
+## Concat
+
+- `concat` 은 배열 두개를 하나로 합침
+- 기존의 배열들을 건드리지 않음
+
+```javascript
+const girl = ["단발좌", "꼬북좌"];
+const group = ["메보좌", "왕눈좌"];
+
+const girlgroup = girl.concat(group);
+console.log(girlgroup);
+```
+
+- 이러한 코드를 작성하면 `concat` 함수가 실행되 `girl` 배열과 `group` 배열을 합쳐 `girlgroup` 변수에 넣어준다.
 
 ## Reduce
 
-````javascript
+- 배열이 주어졌을 때 배열에 있는 모든 값을 이용하여 연산을 수행해야 할 때 사용함
+- `accumulator` 는 누적된 값을 의미함
+- 코드에서 `0` 은 초기 `accumulator`값이 됨
 
-``` -->
+```javascript
+const num = [1, 2, 3, 4, 5];
+
+const reduce = num.reduce((accumulator, current, index) => {
+  if (index === num.length - 1) {
+    return (accumulator + current) / num.length;
+  }
+  return accumulator + current;
+}, 0);
+
+console.log(reduce);
+```
+
+- 이러한 코드를 작성하면 `reduce`안의 조건문이 돌아가며 배열의 길이 전까지 돌아가고 조건문에 만족하기 전까지 값을 계속 더해주어 출력은 `3`이 된다.
 
 ## Plus +
 
@@ -527,5 +556,6 @@ for (let i = 0; i <= 10; i++) {
 }
 ```
 
-- 이런 식으로 코드를 작성하면 `i` 가 `2` 를 만났을때 `continue` 를 실행해 다음 동작을 수행하고, `i` 가 `7` 을 만나면 반복문이 멈추게 된다. 즉 결과값은 `0 , 1 , 3 , 4 , 5 , 7 ` 가 된다.
-````
+- 이런 식으로 코드를 작성하면 `i` 가 `2` 를 만났을때 `continue` 를 실행해 다음 동작을 수행하고, `i` 가 `7` 을 만나면 반복문이 멈추게 된다. 즉 결과값은 `0 , 1 , 3 , 4 , 5 , 7 ` 이 된다.
+
+<!-- ## 프로토타입과 클래스👨‍💻 -->
