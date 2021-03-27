@@ -234,3 +234,48 @@ console.log(add(...spread));
 ```
 
 - 이런식으로 인자 안에서 `spread`를 받아올 수 있다.
+
+# scope🌼
+- `scope` 란 변수나 함수를 선언할 때 어디서 어디까지 유효한지의 범위를 의미함
+- ``Global`` , ``Function`` , ``Block`` 가 있음
+- `Global` : 코드 전역에서 쓸 수 있음
+- `Function` : 함수 내부에서만 쓸 수 있음
+- `Block` : 조건문 등의 내부에서만 쓸 수 있음
+```javascript
+const result = 'Im Global!';
+
+function Say() {
+    const result = 'Im Function!';
+
+    if (true) {
+        const result = 'Im Block!';
+        console.log(result);
+    }
+    console.log(result);
+}
+
+Say();
+console.log(result);
+```
+- 이런 식으로 코드를 작성할 수 있다. 
+- 맨 처음의 `result` 는 `Global` 이므로 코드 어느곳에서든 호출을 할 수 있다. 
+- 두번째 `result` 는 `function` 이므로 함수 안에서만 호출이 가능하다. 
+- `if` 문 안의 `result` 는 `Block` 이므로 `if` 문 안에서만 호출이 가능하다.
+
+# hoisting🌼
+- `hoisting` 이란 선언전에 호출이 되었을때 선언을 코드 맨 위로 올려주는 것임
+- `let` 과 `const` 는 `hoisting` 이 발생하지 않음
+```javascript
+Say();
+
+function Say() {
+    console.log('Hello👋');
+}
+```
+- 이런식으로 코드를 작성해도 실행이 된다.
+
+### 피드백은 언제나 환영입니다! 😇
+
+### 오타나 코드에 오류가 있으면 issue를 남겨주세요! 😁
+
+### 출처 : 패스트캠퍼스 강의 - 벨로퍼트와 함께하는 자바스크립트 유용한 문법
