@@ -100,3 +100,137 @@ AnimalSound('croco');
 AnimalSound('rino');
 AnimalSound('Human');
 ```
+# 비구조화 할당🌼
+
+## 객체에서의 비구조화 할당
+```javascript
+const Object = {name: 'Taehwan', age: 18};
+
+const {name, age} = Object;
+
+console.log(name);
+console.log(age);
+```
+## 배열에서의 비구조화 할당
+```javascript
+const Array = ['Taehwan', 18];
+
+const [name, age] = Array;
+
+console.log(name);
+console.log(age);
+```
+
+## 함수의 파라미터에서의 비구조화 할당
+- 비구조화 할당은 이전의 객체를 배울때 잠깐 사용했었다.
+### 값이 주어졌을때
+```javascript
+const Introduce = {
+    height: 180,
+    weight: 200
+};
+
+function print({height, weight}) {
+    console.log(height);
+    console.log(weight);
+}
+
+print(Introduce);
+```
+### 값이 안주어졌을때
+```javascript
+const Introduce = { height: 180 };
+
+function print({height, weight = 200}) {
+    console.log(height);
+    console.log(weight);
+}
+
+print(Introduce);
+```
+# spread와 rest🌼
+- `spread` 는 객체혹은 배열에서 같은 인자를 퍼트릴수 있다.
+## spread
+
+### 객체
+```javascript
+const Goblin = {
+    name: 'goblin'
+};
+
+const Powergoblin = {
+    ...Goblin,
+    power: true
+};
+
+const Kinggoblin = {
+    ...Powergoblin,
+    army: true
+};
+
+console.log(Goblin);
+console.log(Powergoblin);
+console.log(Kinggoblin);
+```
+### 배열
+```javascript
+const Goblin = ['goblin'];
+const Powergoblin = [...Goblin, 'Power!'];
+const Kinggoblin = [...Goblin, ...Powergoblin, 'King has army!'];
+
+console.log(Goblin);
+console.log(Powergoblin);
+console.log(Kinggoblin);
+```
+- 이런식으로 `...` 을 사용하여 코드를 작성할 수 있다.
+## rest
+- `rest` 는 객체,배열,함수의 파라미터에서 사용할 수 있다.
+### 객체
+```javascript
+const Kinggoblin = {
+    name: 'goblin',
+    power: true,
+    army: true
+};
+
+const {name, ...rest} = Kinggoblin;
+
+console.log(name);
+console.log(rest);
+```
+### 배열
+```javascript
+const Kinggoblin = ['Goblin', 'Im strong!', 'The king has army!'];
+
+const [name, ...rest] = Kinggoblin;
+
+console.log(name);
+console.log(rest);
+```
+- 이런 식으로 비구조화 할당을 이용하여 코드를 작성할 수 있다.
+- 추가적으로 배열에서의 `rest` 는 맨 앞에 나올 수 없다.
+## 함수 파라미터에서의 rest
+```javascript
+function add(...rest) {
+    return rest.reduce((acc, current) => acc + current, 0);
+}
+
+console.log(add(1,2,3,4,5,6,7));
+```
+- 위의 코드처럼 작성하면 `rest` 가 `add` 함수의 파라미터로 들어간다. 그 이후 받아오는 값들을 배열로 받아오는데, 여기서 배열 내장함수인 `reduce` 를 사용하여 입력받는 값들을 다 더해준다. 결과는 `28` 이 나온다.
+- `reduce` 를 모른다면 `javascript 기본 문법` 확인
+
+## 함수 인자에서의 spread
+
+- 파라미터: 함수 안에서 괄호안에 받아오는 값
+- 인자 : 함수를 사용하기 위해 변수안에 넣어주는 값
+
+```javascript
+function add(...rest) {
+    return rest.reduce((acc, current) => acc + current, 0);
+}
+const spread = [1,2,3,4,5,6,7];
+console.log(add(...spread));
+```
+
+- 이런식으로 인자 안에서 `spread`를 받아올 수 있다.

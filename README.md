@@ -10,5 +10,5 @@
 
 ## JavaScript
 
-- [JavaScript][javascriptlink]
-- [JavaScript-2][javascriptlink2]
+- [JavaScript 기본 문법][javascriptlink]
+- [JavaScript-2 유용한 문법][javascriptlink2]
