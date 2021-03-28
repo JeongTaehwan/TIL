@@ -110,7 +110,7 @@ process();
 - 이런식으로 코드를 작성하여 오류를 잡아낸다.
 - `throw` 를 이용하여 오류를 던져주고, `try catch` 로 오류를 잡아낸다.
 
-# Promise.all
+# Promise.all🥷🏼
 
 - 여러개의 `promise` 를 동시에 처리할 떄 사용함
 - `promise.all` 의 인자에서 하나라도 `error` 가 있으면 전체가 `error` 로 간주됨
@@ -142,7 +142,7 @@ process();
 
 - 이런식으로 코드를 작성해 한번에 출력되게 해줄 수 있다.
 
-# Promise.race
+# Promise.race🥷🏼
 
 - 등록한 `promise` 들 중 가장 먼저 나온 것을 출력함
 - `promse.race` 에선 `error` 가 발생했을때 가장 빨리 끝난 것을 `error` 로 간주함
