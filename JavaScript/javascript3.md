@@ -64,3 +64,48 @@ increaseAndPrint(0)
 - `Promise` 선언은 `new Promise` 를 붙여 사용할 수 있다.
 - `resolve` 와 `reject` 는 성공 실패여부에 따라 나뉜다.
 - `catch` 는 오류를 출력해준다.
+
+# async await
+
+- `async await` 는 `promise` 를 더 간편하고 간결하게 사용할 수 있게 해준다.
+
+```javascript
+function sleep(n) {
+  return new Promise((resolve) => setTimeout(resolve, n));
+}
+
+async function process() {
+  console.log("잠에 듭니다..");
+  await sleep(1000);
+  console.log("잠에 들었습니다..");
+}
+
+process();
+```
+
+## async await에서 오류 잡아내기
+
+```javascript
+function sleep(n) {
+  return new Promise((resolve) => setTimeout(resolve, n));
+}
+
+async function sleepfail() {
+  await sleep(1000);
+  const error = new Error();
+  error.name = "불면증으로 인한 수면 실패";
+  throw error;
+}
+async function process() {
+  try {
+    await sleepfail(1000);
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+process();
+```
+
+- 이런식으로 코드를 작성하여 오류를 잡아낸다.
+- `throw` 를 이용하여 오류를 던져주고, `try catch` 로 오류를 잡아낸다.
