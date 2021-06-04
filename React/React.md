@@ -27,3 +27,4 @@ export default App;
 ```
 - 이런식으로 리액트 컴포넌트를 만든다. 
 - 컴포넌트를 만들 땐 ```import React from 'react';``` 를 통해 불러와야한다.
+- 코드의 맨 아래엔 ```export default App``` 이런식으로 컴포넌트를 내보내주어야한다.
