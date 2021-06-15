@@ -2,8 +2,8 @@
 [javascriptlinktwo]: ./JavaScript/javascript2.md
 [javascriptlinkthree]: ./JavaScript/javascript3.md
 [scsslink]: scss.md
-[reactlink]: ./React.md
-[reactlinktwo]: ./React2.md
+[reactlink]: ./React/React.md
+[reactlinktwo]: ./React/React2.md
 
 # Today I Learned
 
