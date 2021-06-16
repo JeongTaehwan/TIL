@@ -13,7 +13,7 @@
 - Props and State
 - JSX
 
-# Component
+# Component🤡
 - Component란 React로 만들어진 앱을 이루는 최소한의 단위를 뜻한다. React에서의 가장 중요한 요소이다.
 
 ```javascript
@@ -29,7 +29,7 @@ export default App;
 - 컴포넌트를 만들 땐 ```import React from 'react';``` 를 통해 불러와야한다.
 - 코드의 맨 아래엔 ```export default App``` 이런식으로 컴포넌트를 내보내주어야한다.
 
-# Hooks
+# Hooks🤡
 - Hooks란 React 버전 16.8부터 React 요소로 새로 추가되었고 Hook을 이용하여 기존 Class 바탕의 코드를 작성할 필요 없이 상태 값과 여러 React의 기능을 사용할 수 있다
 
 ## useState
@@ -387,3 +387,9 @@ function Counter() {
 export default Counter;
 ```
 - 이런 식으로 코드를 작성할 수 있다.
+
+### 피드백은 언제나 환영입니다! 😇
+
+### 오타나 코드에 오류가 있으면 issue를 남겨주세요! 😁
+
+### 출처 : 패스트캠퍼스 강의 - 벨로퍼트와 함께하는 리액트 입문
