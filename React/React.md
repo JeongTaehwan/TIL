@@ -34,15 +34,356 @@ export default App;
 
 ## useState
 - `useState` 는 컴포넌트의 동적인 상태를 관리할 때 사용된다.
+```javascript
+import React, { useState } from 'react';
+
+function Counter() {
+  const [number, setNumber] = useState(0);
+
+  const onIncrease = () => {
+    setNumber(number + 1);
+  }
+
+  const onDecrease = () => {
+    setNumber(number - 1);
+  }
+
+  return (
+    <div>
+      <h1>{number}</h1>
+      <button onClick={onIncrease}>+1</button>
+      <button onClick={onDecrease}>-1</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+- 이런 식으로 코드를 작성하여 사용할 수 있다.
+- `import React, { useState } from 'react'` 이런식으로 `useState` 를 불러와 사용할 수 있다.
 ## useRef
 - `useRef` 는 특정 `DOM` 을 직접 선택할 때 사용된다.
 - 조회나 수정이 가능하 변수를 관리할 때 사용된다.
+```javascript
+import React, { useState, useRef } from 'react';
+
+function InputSample() {
+  const [inputs, setInputs] = useState({
+    name: '',
+    nickname: ''
+  });
+  const nameInput = useRef();
+
+  const { name, nickname } = inputs; // 비구조화 할당을 통해 값 추출
+
+  const onChange = e => {
+    const { value, name } = e.target; // 우선 e.target 에서 name 과 value 를 추출
+    setInputs({
+      ...inputs, // 기존의 input 객체를 복사한 뒤
+      [name]: value // name 키를 가진 값을 value 로 설정
+    });
+  };
+
+  const onReset = () => {
+    setInputs({
+      name: '',
+      nickname: ''
+    });
+    nameInput.current.focus();
+  };
+
+  return (
+    <div>
+      <input
+        name="name"
+        placeholder="이름"
+        onChange={onChange}
+        value={name}
+        ref={nameInput}
+      />
+```
+- 이런 식으로 코드를 사용할 수 있다.
 ## useEffect
 - `useEffect` 는 컴포넌트가 `Mount` , `UnMount` , `Update` 될때 특정 작업을 처리할 때 사용된다.
+```javascript
+import React, { useEffect } from 'react';
+
+function User({ user, onRemove, onToggle }) {
+  useEffect(() => {
+    console.log('컴포넌트가 화면에 나타남');
+    return () => {
+      console.log('컴포넌트가 화면에서 사라짐');
+    };
+  }, []);
+  return (
+    <div>
+      <b
+        style={{
+          cursor: 'pointer',
+          color: user.active ? 'green' : 'black'
+        }}
+        onClick={() => onToggle(user.id)}
+      >
+        {user.username}
+      </b>
+      &nbsp;
+      <span>({user.email})</span>
+      <button onClick={() => onRemove(user.id)}>삭제</button>
+    </div>
+  );
+}
+
+function UserList({ users, onRemove, onToggle }) {
+  return (
+    <div>
+      {users.map(user => (
+        <User
+          user={user}
+          key={user.id}
+          onRemove={onRemove}
+          onToggle={onToggle}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default UserList;
+```
+- 이런 식으로 코드를 사용할 수 있다.
+- `useEffect` 를 사용 할 때에는 첫번째 파라미터에는 함수, 두번째 파라미터에는 의존값이 들어있는 배열 `(deps)` 를 넣는다. 만약에 `deps` 배열을 비우게 된다면, 컴포넌트가 처음 나타날때에만 `useEffect` 에 등록한 함수가 호출된다.
 ## useMemo
 - `useMemo` 는 성능 최적화를 위해 연산된 값을 재사용할때 사용한다.
+```javascript
+import React, { useRef, useState, useMemo } from 'react';
+import UserList from './UserList';
+import CreateUser from './CreateUser';
+
+function countActiveUsers(users) {
+  console.log('활성 사용자 수를 세는중...');
+  return users.filter(user => user.active).length;
+}
+
+function App() {
+  const [inputs, setInputs] = useState({
+    username: '',
+    email: ''
+  });
+  const { username, email } = inputs;
+  const onChange = e => {
+    const { name, value } = e.target;
+    setInputs({
+      ...inputs,
+      [name]: value
+    });
+  };
+  const [users, setUsers] = useState([
+    {
+      id: 1,
+      username: 'velopert',
+      email: 'public.velopert@gmail.com',
+      active: true
+    },
+    {
+      id: 2,
+      username: 'tester',
+      email: 'tester@example.com',
+      active: false
+    },
+    {
+      id: 3,
+      username: 'liz',
+      email: 'liz@example.com',
+      active: false
+    }
+  ]);
+
+  const nextId = useRef(4);
+  const onCreate = () => {
+    const user = {
+      id: nextId.current,
+      username,
+      email
+    };
+    setUsers(users.concat(user));
+
+    setInputs({
+      username: '',
+      email: ''
+    });
+    nextId.current += 1;
+  };
+
+  const onRemove = id => {
+    // user.id 가 파라미터로 일치하지 않는 원소만 추출해서 새로운 배열을 만듬
+    // = user.id 가 id 인 것을 제거함
+    setUsers(users.filter(user => user.id !== id));
+  };
+  const onToggle = id => {
+    setUsers(
+      users.map(user =>
+        user.id === id ? { ...user, active: !user.active } : user
+      )
+    );
+  };
+  const count = useMemo(() => countActiveUsers(users), [users]);
+  return (
+    <>
+      <CreateUser
+        username={username}
+        email={email}
+        onChange={onChange}
+        onCreate={onCreate}
+      />
+      <UserList users={users} onRemove={onRemove} onToggle={onToggle} />
+      <div>활성사용자 수 : {count}</div>
+    </>
+  );
+}
+
+export default App;
+```
+- 이런 식으로 코드를 작성할 수 있다.
+- `useMemo` 의 첫번째 파라미터에는 어떻게 연산할지 정의하는 함수를 넣어주면 되고 두번째 파라미터에는 `deps` 배열을 넣어주면 되는데, 이 배열 안에 넣은 내용이 바뀌면, 우리가 등록한 함수를 호출해서 값을 연산해주고, 만약에 내용이 바뀌지 않았다면 이전에 연산한 값을 재사용하게 된다.
 ## useCallback
 - `useCallback` 은 `useMemo` 와 비슷하다. 
 - `useMemo` 는 특정결과 값을 재사용하지만, `useCallback` 은 특정함수를 새로 만들지 않고 재사용할때 사용한다.
+```javascript
+import React, { useRef, useState, useMemo, useCallback } from 'react';
+import UserList from './UserList';
+import CreateUser from './CreateUser';
+
+function countActiveUsers(users) {
+  console.log('활성 사용자 수를 세는중...');
+  return users.filter(user => user.active).length;
+}
+
+function App() {
+  const [inputs, setInputs] = useState({
+    username: '',
+    email: ''
+  });
+  const { username, email } = inputs;
+  const onChange = useCallback(
+    e => {
+      const { name, value } = e.target;
+      setInputs({
+        ...inputs,
+        [name]: value
+      });
+    },
+    [inputs]
+  );
+  const [users, setUsers] = useState([
+    {
+      id: 1,
+      username: 'velopert',
+      email: 'public.velopert@gmail.com',
+      active: true
+    },
+    {
+      id: 2,
+      username: 'tester',
+      email: 'tester@example.com',
+      active: false
+    },
+    {
+      id: 3,
+      username: 'liz',
+      email: 'liz@example.com',
+      active: false
+    }
+  ]);
+
+  const nextId = useRef(4);
+  const onCreate = useCallback(() => {
+    const user = {
+      id: nextId.current,
+      username,
+      email
+    };
+    setUsers(users.concat(user));
+
+    setInputs({
+      username: '',
+      email: ''
+    });
+    nextId.current += 1;
+  }, [users, username, email]);
+
+  const onRemove = useCallback(
+    id => {
+      // user.id 가 파라미터로 일치하지 않는 원소만 추출해서 새로운 배열을 만듬
+      // = user.id 가 id 인 것을 제거함
+      setUsers(users.filter(user => user.id !== id));
+    },
+    [users]
+  );
+  const onToggle = useCallback(
+    id => {
+      setUsers(
+        users.map(user =>
+          user.id === id ? { ...user, active: !user.active } : user
+        )
+      );
+    },
+    [users]
+  );
+  const count = useMemo(() => countActiveUsers(users), [users]);
+  return (
+    <>
+      <CreateUser
+        username={username}
+        email={email}
+        onChange={onChange}
+        onCreate={onCreate}
+      />
+      <UserList users={users} onRemove={onRemove} onToggle={onToggle} />
+      <div>활성사용자 수 : {count}</div>
+    </>
+  );
+}
+
+export default App;
+```
+- 이런 식으로 코드를 사용할 수 있다.
+- 주의할 점은 함수 안에서 사용하는 상태 혹은 props 가 있다면 꼭, deps 배열안에 포함시켜야 된다.
 ## useReducer
 - `useReducer` 는 컴포넌트의 상태 업데이트 로직을 컴포넌트에서 분리할 때 사용한다.
+```javascript
+import React, { useReducer } from 'react';
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
+    default:
+      return state;
+  }
+}
+
+function Counter() {
+  const [number, dispatch] = useReducer(reducer, 0);
+
+  const onIncrease = () => {
+    dispatch({ type: 'INCREMENT' });
+  };
+
+  const onDecrease = () => {
+    dispatch({ type: 'DECREMENT' });
+  };
+
+  return (
+    <div>
+      <h1>{number}</h1>
+      <button onClick={onIncrease}>+1</button>
+      <button onClick={onDecrease}>-1</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+- 이런 식으로 코드를 작성할 수 있다.
