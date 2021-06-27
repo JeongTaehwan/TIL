@@ -1,9 +1,9 @@
 [javascriptlink]: ./JavaScript/javascript.md
-[javascriptlinktwo]: ./JavaScript/javascript2.md
-[javascriptlinkthree]: ./JavaScript/javascript3.md
+[javascriptlinktwo]: ./JavaScript/usefulGrammer.md
+[javascriptlinkthree]: ./JavaScript/Asynchronous.md
 [scsslink]: scss.md
 [reactlink]: ./React/React.md
-[reactlinktwo]: ./React/React2.md
+[reactlinktwo]: ./React/Styled-Components.md
 
 # Today I Learned
 
