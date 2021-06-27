@@ -19,4 +19,4 @@
 ## React
 
 - [React 기본 문법][reactlink]
-- [React Styling과 Styled-Components][reactlinktwo]
+- [Styled-Components][reactlinktwo]
