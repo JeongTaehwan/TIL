@@ -2,7 +2,7 @@
 [javascriptlinktwo]: ./JavaScript/usefulGrammar.md
 [javascriptlinkthree]: ./JavaScript/Asynchronous.md
 [scsslink]: scss.md
-[reactlink]: ../React/React.md
+[reactlink]: ./React/React.md
 [reactlinktwo]: ./React/Styled-Components.md
 
 # Today I Learned
