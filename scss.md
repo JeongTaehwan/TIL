@@ -556,5 +556,4 @@ $i: 6;
   - `comparable($number1, $number2)` : 두 개의 숫자가 연산 가능한지 여부를 반환
 
 ## 출처 : HEROPY Sass(Scss) 완전 정복!
-
 ## 피드백은 언제나 환영입니다!

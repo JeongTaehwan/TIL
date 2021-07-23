@@ -4,6 +4,7 @@
 [scsslink]: scss.md
 [reactlink]: ./React/React.md
 [reactlinktwo]: ./React/Styled-Components.md
+[reactlinkthree]: ./React/ReactAPI.md
 
 # Today I Learned
 
@@ -20,3 +21,4 @@
 
 - [React 기본 문법][reactlink]
 - [Styled-Components][reactlinktwo]
+- [React에서 API 연동하기][reactlinkthree]
