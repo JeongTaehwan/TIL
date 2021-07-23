@@ -1,7 +1,7 @@
 [javascriptlink]: ./JavaScript/javascript.md
 [javascriptlinktwo]: ./JavaScript/usefulGrammar.md
 [javascriptlinkthree]: ./JavaScript/Asynchronous.md
-[scsslink]: scss.md
+[Sasslink]: Sass.md
 [reactlink]: ./React/React.md
 [reactlinktwo]: ./React/Styled-Components.md
 [reactlinkthree]: ./React/ReactAPI.md
@@ -13,8 +13,8 @@
 - [JavaScript | 유용한 문법][javascriptlinktwo]
 - [JavaScript | 비동기처리][javascriptlinkthree]
 
-## SCSS 🌈
-- [SCSS | 기본 문법][scsslink]
+## Sass 🌈
+- [Sass | 기본 문법][Sasslink]
 
 ## React 🤡
 - [React | 기본 문법][reactlink]
