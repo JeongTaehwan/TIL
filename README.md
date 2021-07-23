@@ -1,7 +1,7 @@
 [javascriptlink]: ./JavaScript/javascript.md
 [javascriptlinktwo]: ./JavaScript/usefulGrammar.md
 [javascriptlinkthree]: ./JavaScript/Asynchronous.md
-[Sasslink]: Sass.md
+[Sasslink]: ./Others/Sass.md
 [reactlink]: ./React/React.md
 [reactlinktwo]: ./React/Styled-Components.md
 [reactlinkthree]: ./React/ReactAPI.md
