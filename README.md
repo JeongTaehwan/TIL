@@ -2,12 +2,16 @@
 [javascriptlinktwo]: ./JavaScript/usefulGrammar.md
 [javascriptlinkthree]: ./JavaScript/Asynchronous.md
 [Sasslink]: ./Others/Sass.md
+[Wordslink]: ./Others/Words.md
 [reactlink]: ./React/React.md
 [reactlinktwo]: ./React/Styled-Components.md
 [reactlinkthree]: ./React/ReactAPI.md
 [reactlinkfour]: ./React/ReactRouter.md
 
 # Today I Learned 🤠
+<b>1. 내가 이해할 수 있는 수준으로 정리</b> <br>
+<b>2. 최대한 정확한 자료를 찾아서 정리</b> <br>
+<b>3. 정리는 꾸준히하기</b>
 
 ## JavaScript 👨‍💻
 - [JavaScript | 기본 문법][javascriptlink]
@@ -22,3 +26,6 @@
 - [React | Styled-Components][reactlinktwo]
 - [React | React에서 API 연동하기][reactlinkthree]
 - [React | React Router][reactlinkfour]
+
+## Others 🎸
+- [개발하다 모르겠는 용어 정리][Wordslink]
