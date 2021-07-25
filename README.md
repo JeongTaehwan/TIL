@@ -14,6 +14,8 @@
 <b>3. 정리는 꾸준히하기</b> <br>
 <b>4. 커밋 메세지는 이해할 수 있게 한글로</b>
 
+---
+
 ## JavaScript 👨‍💻
 - [JavaScript | 기본 문법][javascriptlink]
 - [JavaScript | 유용한 문법][javascriptlinktwo]
