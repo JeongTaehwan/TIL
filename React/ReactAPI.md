@@ -12,10 +12,10 @@ $ yarn add axios
 ## axios를 사용하여 할 수 있는 것 🐱‍🐉
  > `axios`를 사용하여 `GET, PUT, POST, DELETE` 등의 메서드로 API 요청을 할 수 있다.
 
-- <b>GET</b>: 데이터 조회
-- <b>POST</b>: 데이터 등록
-- <b>PUT</b>: 데이터 수정
-- <b>DELETE</b>: 데이터 제거
+- **GET**: 데이터 조회
+- **POST**: 데이터 등록
+- **PUT**: 데이터 수정
+- **DELETE**: 데이터 제거
 ---
 
 ## axios 사용법 🐱‍🐉

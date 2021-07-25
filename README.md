@@ -9,12 +9,11 @@
 [reactlinkfour]: ./React/ReactRouter.md
 
 # Today I Learned 🤠
-<b>1. 내가 이해할 수 있는 수준으로 정리</b> <br>
-<b>2. 최대한 정확한 자료를 찾아서 정리</b> <br>
-<b>3. 정리는 꾸준히하기</b> <br>
-<b>4. 커밋 메세지는 이해할 수 있게 한글로</b>
 
----
+**1. 내가 이해할 수 있는 수준으로 정리**   
+**2. 최대한 정확한 자료를 찾아서 정리**   
+**3. 정리는 꾸준히하기**   
+**4. 커밋 메세지는 이해할 수 있게 한글로**
 
 ## JavaScript 👨‍💻
 - [JavaScript | 기본 문법][javascriptlink]
