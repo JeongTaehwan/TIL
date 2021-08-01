@@ -7,6 +7,7 @@
 [reactlinktwo]: ./React/Styled-Components.md
 [reactlinkthree]: ./React/ReactAPI.md
 [reactlinkfour]: ./React/ReactRouter.md
+[typescriptlink]: ./Typescript/typescript.md
 
 # Today I Learned 🤠
 
@@ -27,6 +28,9 @@
 - [React | Styled-Components][reactlinktwo]
 - [React | React에서 API 연동하기][reactlinkthree]
 - [React | React Router][reactlinkfour]
+
+## Typescript 🔎
+- [Typescript | 기본 문법][typescriptlink]
 
 ## Others 🎸
 - [개발하다 모르겠는 용어 정리][Wordslink]
