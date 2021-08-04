@@ -19,24 +19,24 @@
 **5. 문장의 끝은 항상 ~이다. 로 통일**
 
 ## JavaScript 👨‍💻
-- [JavaScript | 기본 문법 👨‍💻][javascriptlink]
-- [JavaScript | 유용한 문법 🌼][javascriptlinktwo]
-- [JavaScript | 비동기처리 🥷🏼][javascriptlinkthree]
+- [JavaScript | 기본 문법][javascriptlink]
+- [JavaScript | 유용한 문법][javascriptlinktwo]
+- [JavaScript | 비동기처리][javascriptlinkthree]
 
 ## Sass 🌈
-- [Sass | 기본 문법 🌈][Sasslink]
+- [Sass | 기본 문법][Sasslink]
 
 ## React 🤡
-- [React | 기본 문법 🤡][reactlink]
-- [React | Styled-Components 💅][reactlinktwo]
-- [React | React에서 API 연동하기 🐱‍🐉][reactlinkthree]
-- [React | React Router 🕵️‍♂️][reactlinkfour]
-- [React | Recoil 🛁][reactlinkfive]
+- [React | 기본 문법][reactlink]
+- [React | Styled-Components][reactlinktwo]
+- [React | React에서 API 연동하기][reactlinkthree]
+- [React | React Router][reactlinkfour]
+- [React | Recoil][reactlinkfive]
 
 ## Typescript 🔎
-- [Typescript | 기본 문법 🔎][typescriptlink]
+- [Typescript | 기본 문법][typescriptlink]
 
 ## Others 🎸
-- [개발하다 모르겠는 용어 정리 🔡][Wordslink]
+- [개발하다 모르겠는 용어 정리][Wordslink]
 
 <!-- 추가할 것 : Jest, Redux -->
