@@ -9,4 +9,3 @@
 - DELETE (데이터 제거)   
 
 **SI(System Intergrator)** : 여러 기업의 하드웨어, 소프트웨어, 네트워크, 스토리지 등을 통합하는 서비스를 제공하는 것   
-**IDE(Integrated Development Environment, IDE)** :  통합 개발 환경이라는 뜻, 공통된 하나의 개발자 툴을 `GUI` 로 결합하는 애플리케이션을 구현하기 위한 소프트웨어 이다.
