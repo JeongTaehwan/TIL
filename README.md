@@ -9,6 +9,8 @@
 [reactlinkfour]: ./React/ReactRouter.md
 [reactlinkfive]: ./React/Recoil.md
 [typescriptlink]: ./Typescript/typescript.md
+[designpatternlink]: ./Design_Pattern/Design_Pattern.md
+[designpatternlinktwo]: ./Design_Pattern/MVC.md
 
 # Today I Learned 🤠
 
@@ -35,6 +37,10 @@
 
 ## Typescript 🔎
 - [Typescript | 기본 문법][typescriptlink]
+
+## Design Pattern 🎨
+- [Design Pattern | 기본 정의][designpatternlink]
+- [Design Pattern | MVC Pattern][designpatternlinktwo]
 
 ## Others 🎸
 - [개발하다 모르겠는 용어 정리][Wordslink]
