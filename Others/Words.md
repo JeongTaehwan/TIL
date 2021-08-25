@@ -1,12 +1,13 @@
 # 개발하다가 모르겠는 용어 정리 🔡
 
-**TDD(Test Driven Development)** : 테스트 주도 개발   
-**MVP(Minimum Viable Product)** : 고객의 피드백을 받아 최소한의 기능을 구현한 제품   
+**TDD (Test Driven Development)** : 테스트 주도 개발   
+**MVP (Minimum Viable Product)** : 고객의 피드백을 받아 최소한의 기능을 구현한 제품   
 **HTTP 메서드** : 클라이언트와 서버가 소통하는 형태를 구분하는 것 
 - GET (데이터 조회)
 - POST (데이터 등록)
 - PUT (데이터 수정)
 - DELETE (데이터 제거)   
 
-**SI(System Intergrator)** : 여러 기업의 하드웨어, 소프트웨어, 네트워크, 스토리지 등을 통합하는 서비스를 제공하는 것   
+**SI (System Intergrator)** : 여러 기업의 하드웨어, 소프트웨어, 네트워크, 스토리지 등을 통합하는 서비스를 제공하는 것   
 **IDE (Integrated Development Environment)** : 통합 개발 환경이란 공통된 개발자 툴을 하나의 그래픽 사용자 인터페이스로 결합하는 애플리케이션을 구축하기 위한 소프트웨어이다.   
+**메모이제이션 (memoization)** : 메모이제이션은 동일한 계산을 반복해야 할 때, 이전에 계산한 값을 메모리에 저장함으로써 동일한 계산의 반복 수행을 제거하여 프로그램 실행 속도를 빠르게 하는 기술이다.
