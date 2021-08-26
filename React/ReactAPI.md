@@ -1,6 +1,6 @@
 # React로 API 연동하기 🐱‍🐉
 
-## 설치 🐱‍🐉
+## 설치 
 > 먼저 API 호출을 위한 `axios` 라이브러리를 설치한다
 
 ```
@@ -9,7 +9,7 @@ $ yarn add axios
 ```
 ---
 
-## axios를 사용하여 할 수 있는 것 🐱‍🐉
+## axios를 사용하여 할 수 있는 것 
 > `axios`를 사용하여 `GET, PUT, POST, DELETE` 등의 메서드로 API 요청을 할 수 있다.
 
 - **GET**: 데이터 조회
@@ -18,7 +18,7 @@ $ yarn add axios
 - **DELETE**: 데이터 제거
 ---
 
-## axios 사용법 🐱‍🐉
+## axios 사용법 
 
 ```javascript
 import axios from 'axios';
@@ -38,7 +38,7 @@ axios.post('/users'. {
 
 ---
 
-## 마무리 🐱‍🐉
+## 마무리 
 
 > React에서의 API 연동은 다음과 같은 `Hooks`와 함께 사용 할 수 있다.
 - useState

@@ -2,7 +2,7 @@
 
 > 이번엔 Javascript의 비동기 처리에 대해 소개하려 한다.
 
-## 비동기 처리 🥷🏼
+## 비동기 처리 
 
 - 비동기 처리란 어떤 작업을 수행중일때 다른 작업이 대기 상태가 아닌 동시에 작업을 하는 것을 의미한다.
 - 주로 `Ajax Web API 요청` , `파일 읽기` , `암호화 복호화` , `작업 예약` 등에 사용된다.
@@ -31,7 +31,7 @@ console.log("다음 사냥을 시작합니다!🦴");
 
 --- 
 
-## Promise 🥷🏼
+## Promise
 
 > `callback` 함수가 많으면 코드가 난잡해져 일명 `callback 지옥`이 만들어진다. 이런 상황을 대비할땐 `Promise` 를 사용하면 된다.
 
@@ -70,7 +70,7 @@ increaseAndPrint(0)
 
 ---
 
-## async await 🥷🏼
+## async await
 
 > `async await` 는 `promise` 를 더 간편하고 간결하게 사용할 수 있게 해준다.
 
@@ -88,7 +88,7 @@ async function process() {
 process();
 ```
 
-## async await에서 오류 잡아내기 🥷🏼
+## async await에서 오류 잡아내기 
 
 ```javascript
 function sleep(n) {
@@ -116,7 +116,7 @@ process();
 
 ---
 
-## Promise.all 🥷🏼
+## Promise.all 
 
 > 여러개의 `promise` 를 동시에 처리할 떄 사용한다. `promise.all` 의 인자에서 하나라도 `error` 가 있으면 전체가 `error` 로 간주된다.
 
@@ -149,7 +149,7 @@ process();
 
 ---
 
-## Promise.race 🥷🏼
+## Promise.race 
 
 > 등록한 `promise` 들 중 가장 먼저 나온 것을 출력한다. `promse.race` 에선 `error` 가 발생했을때 가장 빨리 끝난 것을 `error` 로 간주한다.
 

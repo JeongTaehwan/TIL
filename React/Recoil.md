@@ -1,11 +1,11 @@
 # Recoil 🛁
 
-## 설명 🛁
+## 설명 
 > `Recoil` 은 `React` 를 위한 상태 관리 라이브러리이다.
 
-## 주요개념 🛁
+## 주요개념 
 
-**Atoms** 🛁
+**Atoms** 
 > `Atoms` 는 상태의 단위이며, 업데이트와 구독이 가능하다. `Atoms` 는 `React` 의 로컬 컴포넌트의 상태 대신 사용할 수 있다.
 
 ```javascript
@@ -22,7 +22,7 @@ const fontSizeState = atom({
 const [fontSize, setFontSize] = useRecoilState(fontSizeState);
 ```
 
-**Selector** 🛁
+**Selector** 
 > `Selector` 는 `atoms` 나 다른 `selector` 를 입력으로 받아들이는 순수 함수(pure function)이다. 
 
 > 컴포넌트의 관점에서 보면 `selectors` 와 `atoms` 는 동일한 인터페이스를 가지므로 서로 대체할 수 있다.

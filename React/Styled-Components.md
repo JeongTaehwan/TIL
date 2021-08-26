@@ -1,9 +1,9 @@
 # Styled-Components 💅
 
-## Styled-Components란? 💅
+## Styled-Components란? 
 > Styled-Components란 `CSS in JS`로 css를 react의 component 내부에서 사용할 수 있게 만든 가장 인기있는 라이브러리 입니다.
 
-## Styled-Components 사용법 💅
+## Styled-Components 사용법 
 > `styled-components`를 사용할 react 폴더에 `yarn add styled-components`를 해주세요.
 
 ```javascript

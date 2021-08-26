@@ -1,6 +1,6 @@
 # JavaScript 👨‍💻
 
-## 자바스크립트란? 👨‍💻
+## 자바스크립트란? 
 
 > 자바스크립트는 ‘웹페이지에 생동감을 불어넣기 위해’ 만들어진 프로그래밍 언어이다.
   자바스크립트로 작성한 프로그램을 스크립트(script) 라고 부른다. 스크립트는 웹페이지의 HTML 안에 작성할 수 있는데, 웹페이지를 불러올 때 스크립트가 자동으로 실행된다.
@@ -8,7 +8,7 @@
 
 ---
 
-## 자바스크립트는 왜 쓰나요? 👨‍💻
+## 자바스크립트는 왜 쓰나요? 
 
 - 웹사이트를 더 동적으로 만들기 위해
 - 사용자의 행동에 반응 할 수 있기 때문
@@ -17,13 +17,13 @@
 
 ---
 
-## 변수선언 👨‍💻
+## 변수선언 
 
 - JavaScript에서의 변수 선언은 `let` , `var` , `const` 가 있다
 - `let` 과 `var` 은 변수,즉 선언을 한 후 값을 바꾸어도 문제없이 출력이 된다.
 - `const` 는 상수, 즉 선언을 한 후 값을 바꾸면 오류가 출력 된다.
 
-**let** 👨‍💻
+**let** 
 
 ```javascript
 let a = "Hello World!🐬";
@@ -33,7 +33,7 @@ console.log(a);
 ```
 > 이런식으로 코드를 작성할 시 마지막으로 값을 지정해준 `'Puwan is Hansome'` 이 출력 되어진다.
 
-**const** 👨‍💻
+**const** 
 
 ```javascript
 const a = "Puwan is ugly🤢";
@@ -46,11 +46,11 @@ console.log(a);
 
 ---
 
-## 연산자 👨‍💻
+## 연산자 
 
 > Javascript의 연산자는 `NOT , AND , OR` 로 구성되어 있다.
 
-**NOT** 👨‍💻
+**NOT** 
 
 - 값을 그 값의 반대값으로 변환해준다.
 - 코드로 표시할땐 `!` 로 표시한다.
@@ -62,7 +62,7 @@ console.log(a);
 
 > 이런식으로 코드를 작성하면 `true` 의 `NOT` 값이므로 반대 값인 `false` 를 출력하게 된다.
 
-**AND** 👨‍💻
+**AND** 
 
 - 두 값이 모두 `true` 값이 나와야 `true` 를 출력한다.
 - 코드로 표시할땐 `&&` 로 표시한다.
@@ -74,7 +74,7 @@ console.log(a);
 
 > 이렇게 작성하면 값은 `true` 가 나온다.
 
-**OR** 👨‍💻
+**OR** 
 
 - 두 값중 하나라도 `true` 값이 나오면 `true` 가 출력된다.
 - 코드로 표시할땐 `||` 로 표시한다.
@@ -88,7 +88,7 @@ console.log(a);
 
 ---
 
-## 조건문 👨‍💻
+## 조건문 
 
 > 조건이 `true` 값일때 지정한 값을 출력해주는 문법이다.
 
@@ -108,7 +108,7 @@ if (a - 1 == 0) {
 
 > 이런식으로 코드를 작성하면 조건인 `a - 2 == 0` 이 `true` 값이므로 `'True2'` 가 출력된다. 문법의 처음에 나오는 `if` 의 조건이 일치하지 않으므로 `else if` 로 넘어가 조건을 확인한다. 만약 `if` 와 `else if` 의 조건이 다 `true` 가 아니면 마지막으로 `else` 의 값이 나오게 된다.
 
-**switch case** 👨‍💻
+**switch case** 
 
 ```javascript
 let sports = "soccer";
@@ -132,7 +132,7 @@ switch (sports) {
 
 ---
 
-## 함수 👨‍💻
+## 함수 
 
 - 특정코드를 하나의 명령어로 실행하게 해주는 기능이다.
 - 파라미터가 주어졌을때 결과를 만들어 낼 수 있다.
@@ -159,7 +159,7 @@ console.log(result);
 
 > 이런 식으로 하나의 명령어로 설정하여 코드를 더 가독성있게 만들 수 있다.
 
-**Function Template Literal** 👨‍💻
+**Function Template Literal** 
 
 ```javascript
 function Introduce(hobby) {
@@ -172,7 +172,7 @@ console.log(result);
 
 > 이런 식으로 `` ` ``키를 이용하여서도 함수를 선언할 수 있다.
 
-**Arrow Function** 👨‍💻
+**Arrow Function** 
 
 ```javascript
 const Introduce = (hobby) => {
@@ -186,7 +186,7 @@ Introduce("Soccer");
 
 ---
 
-## 객체 👨‍💻
+## 객체 
 
 > 어떠한 값을 선언하게 될때 하나의 이름에 여러 값을 넣을 수 있게 해준다.
 
@@ -206,7 +206,7 @@ console.log(`저의 이름은 ${Me.name} 입니다.
 
 > 이런식으로 `Me` 라는 객체안에 `이름,나이,키,몸무게,여자친구 여부` 를 넣어주었다.
 
-**객체 비구조화 할당** 👨‍💻
+**객체 비구조화 할당** 
 
 ```javascript
 const Me = {
@@ -224,7 +224,7 @@ console.log(`저의 이름은 ${name} 입니다.
 
 > 이런식으로 비구조화 할당을 사용해 좀 더 편하게 객체를 사용할 수 있다.
 
-**객체안에 함수넣기** 👨‍💻
+**객체안에 함수넣기** 
 
 ```javascript
 const korean = {
@@ -249,7 +249,7 @@ american.say();
 
 > 이런식으로 객체안에 함수를 넣을 수 있다. 함수안의 `this` 는 `this` 가 포함된 객체를 가리킨다.
 
-**Getter** 👨‍💻
+**Getter** 
 
 ```javascript
 const Taehwan = {
@@ -266,7 +266,7 @@ console.log(Taehwan._name);
 
 > 위의 코드에서 보다시피 `get` 이라는 함수를 불러와 `'이름을 출력합니다'` 라는 문장을 `return` 하게 된다.그리고 `get` 함수는 반드시 `return` 값이 필요하다.
 
-**Setter** 👨‍💻
+**Setter** 
 
 ```javascript
 const Taehwan = {
@@ -286,7 +286,7 @@ console.log(Taehwan._age);
 
 ---
 
-## 배열 👨‍💻
+## 배열 
 
 - 여러개의 항목들의 담겨있는 리스트이다.
 - 배열의 `index` 값은 `0` 부터 시작한다.
@@ -302,7 +302,7 @@ console.log(arr.length);
 
 > 이런식으로 코드를 작성하면 처음 출력한 값은 `[1, true, { a: 1 }, 4]` 가 나오고, 두번째 출력 값은 `1` 이 나온다. 변수명 뒤에 `[]` 를 붙이면 그 `[]` 안의 `index` 값을 보여준다. 그리고 배열 내장함수인 `length` 는 배열의 길이를 알려준다. 이 코드의 경우 `4` 가 출력된다.
 
-## 배열 - 2 (내장함수) 👨‍💻
+## 배열 - 2 (내장함수) 
 
 > Javascript의 배열에는 다양한 내장함수가 있다.
 
@@ -318,7 +318,7 @@ country.forEach((manycountry) => {
 
 > 이런 식으로 `forEach` 문을 사용해 같은 결과를 주는 다른 코드들 보다 더 간결하게 작성할 수 있다.
 
-**Map** 👨‍💻
+**Map** 
 
 > `Map` 은 배열 안의 원소를 변환할 때 사용한다.
 
@@ -331,7 +331,7 @@ console.log(squared);
 
 > 위의 코드에선 `array` 에 `Map` 함수를 사용하여 제곱시켰으니 `1 , 4 , 9 , 16 , 25` 가 출력된다.
 
-**Filter** 👨‍💻
+**Filter** 
 
 > `Filter` 함수는 특정 조건을 만족하는 원소들을 찾아 그 원소들을 가지고 새로운 배열을 만드는 함수이다.
 
@@ -359,7 +359,7 @@ console.log(SmellOnOff);
 
 > 이런 식으로 코드를 작성하면 `filter` 함수가 `smell` 의 값이 `true` 인 객체를 꺼내어 새로운 배열을 만들어준다.
 
-**Splice** 👨‍💻
+**Splice** 
 
 > `Splice` 함수는 배열의 어떠한 값부터 지정한 값까지 지워주는 함수이다.
 
@@ -373,7 +373,7 @@ console.log(soccerplayer);
 
 > 이런식으로 코드를 작성하면 `indexOf` 로 선택한 `ronaldo` 부터 `1` 칸을 지워주는 것이므로 `["messi", "neymar", "pogba", "ramos"]` 가 출력된다.
 
-**Slice** 👨‍💻
+**Slice** 
 
 > `Slice` 함수는 `Splice` 와는 달리 기존의 배열은 건들이지 않고 따로 빼내어 출력한다.
 
@@ -387,7 +387,7 @@ console.log(soccerplayer);
 
 > 이런식으로 코드를 작성하면 `slice`하여 `index[0]`의 값부터 2칸을 자르는 거니까 `["messi", "ronaldo"]` 가 출력되고 기존의 배열은 그대로 출력된다.
 
-**Shift** 👨‍💻
+**Shift** 
 
 > `shift` 는 배열의 첫번째 원소를 추출해준다. 또한 기존의 배열을 수정한다.
 
@@ -400,7 +400,7 @@ console.log(girlgroup);
 
 > 이러한 코드를 작성하면 `shift` 함수가 발동되어 `'단발좌'` 가 빠져나오고, `girlgroup` 배열을 출력하면 `[ "꼬북좌", "메보좌", "왕눈좌" ]`가 출력된다.
 
-**Pop** 👨‍💻
+**Pop** 
 
 > `pop` 은 배열의 마지막 원소를 추출해준다. 또한 기존의 배열을 수정한다.
 
@@ -413,7 +413,7 @@ console.log(girlgroup);
 
 > 이러한 코드를 작성하면 `pop` 함수가 발동되어 `'왕눈좌'` 가 빠져나오고, `girlgroup` 배열을 출력하면 `[ "단발좌", "꼬북좌", "메보좌" ]`가 출력된다.
 
-**Unshift** 👨‍💻
+**Unshift** 
 
 > `unshift` 는 배열의 맨 앞에 값을 추가한다. `shift` 와 짝으로 자주 쓰이고 기존의 배열을 수정한다.
 
@@ -426,7 +426,7 @@ console.log(girlgroup);
 
 > 이러한 코드를 작성하면 `unshift` 함수가 발동되어 배열의 맨 앞에 `"브레이브걸스"` 라는 값이 추가되어 출력되게 된다.
 
-**Push** 👨‍💻
+**Push** 
 
 > `push` 는 배열의 맨 앞에 값을 추가한다. 또한 `pop` 와 짝으로 자주 쓰이고 기존의 배열을 수정한다.
 
@@ -439,7 +439,7 @@ console.log(girlgroup);
 
 > 이러한 코드를 작성하면 `push` 함수가 발동되어 배열의 맨 뒤에 `"브레이브걸스"` 라는 값이 추가되어 출력되게 된다.
 
-**Concat** 👨‍💻
+**Concat** 
 
 > `concat` 은 배열 두개를 하나로 합친다, 그리고 기존의 배열들을 건드리지 않는다.
 
@@ -453,7 +453,7 @@ console.log(girlgroup);
 
 > 이러한 코드를 작성하면 `concat` 함수가 실행되 `girl` 배열과 `group` 배열을 합쳐 `girlgroup` 변수에 넣어준다.
 
-**Reduce** 👨‍💻
+**Reduce** 
 
 - 배열이 주어졌을 때 배열에 있는 모든 값을 이용하여 연산을 수행해야 할 때 사용한다.
 - `accumulator` 는 누적된 값을 의미한다.
@@ -474,7 +474,7 @@ console.log(reduce);
 
 > 이러한 코드를 작성하면 `reduce`안의 조건문이 돌아가며 배열의 길이 전까지 돌아가고 조건문에 만족하기 전까지 값을 계속 더해주어 출력은 `3`이 된다.
 
-**Plus ➕**
+**Plus ➕*
 
 - 추가적으로 `indexOf` , `findIndex` , `find` 등의 함수가 있다.
 - `indexOf` : 찾고자하는 원소의 위치를 찾을 때 , index값을 반환한다.
@@ -483,11 +483,11 @@ console.log(reduce);
 
 ---
 
-## 반복문 👨‍💻
+## 반복문 
 
 - 특정 작업을 반복적으로 사용할 때 사용하는 구문이다.
 
-**For** 👨‍💻
+**For** 
 
 ```javascript
 for (let i = 0; i < 10; i++) {
@@ -507,7 +507,7 @@ for (let i = 0; i <= arr.length; i++) {
 
 > 이런 식으로 배열과도 함께 사용할 수 있다.
 
-**While** 👨‍💻
+**While** 
 
 ```javascript
 let handsome = false;
@@ -526,7 +526,7 @@ while (!handsome) {
 
 > 이런식으로 For문의 경우는 보통 숫자가 어느 정도에 도달하면 멈추는 조건을 자주 사용하지만 While문은 주로 어떠한 값의 True 나 False값으로 조건을 사용한다.
 
-**For Of** 👨‍💻
+**For Of** 
 
 > 보통 배열을 사용할 때 주로 사용한다.
 
@@ -540,7 +540,7 @@ for (let array of arr) {
 
 > 이런 식으로 코드를 작성하면 1,2,3,4,5가 출력된다.
 
-**For in** 👨‍💻
+**For in** 
 
 > 보통 객체를 사용할 때 주로 사용한다.
 
@@ -557,7 +557,7 @@ for (let key in dog) {
 
 > 이런 식으로 코드를 작성하면 `name: Johnny age: 1`가 출력된다.
 
-**Continue Break** 👨‍💻
+**Continue Break** 
 
 ```javascript
 for (let i = 0; i <= 10; i++) {
@@ -571,13 +571,13 @@ for (let i = 0; i <= 10; i++) {
 
 ---
 
-## 프로토타입과 클래스 👨‍💻
+## 프로토타입과 클래스 
 
 > `prototype` 은 객체와 객체를 연결 시켜주고, 불필요한 메모리를 줄여준다.
 
 ---
 
-## 객체 생성자 👨‍💻
+## 객체 생성자 
 
 > 객체 생성자는 함수를 통해 새로운 객체를 만들어 그 안에 넣고싶은 값또는 함수를 넣을 수 있게 해준다.
 
@@ -600,7 +600,7 @@ elephant.say();
 
 > 이런식으로 코드 안에서 prototype을 사용하여 같은 결과의 다른 코드들보다 더 간편하게 사용할 수 있다.
 
-## 객체 생성자 상속 👨‍💻
+## 객체 생성자 상속 
 
 ```javascript
 function Animal(type, name, sound) {
@@ -638,7 +638,7 @@ eagle.say();
 
 ---
 
-## ES6 클래스 👨‍💻
+## ES6 클래스 
 
 - `class` 에서 `constructor(생성자)` 로 파라미터를 받아온다.
 - 상속을 받을 `class` 에선 `extends` 를 붙이고 상속받을 부모클래스 이름을 넣어준다.
