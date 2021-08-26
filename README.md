@@ -11,6 +11,7 @@
 [typescriptlink]: ./Typescript/typescript.md
 [designpatternlink]: ./Design_Pattern/Design_Pattern.md
 [designpatternlinktwo]: ./Design_Pattern/MVC.md
+[basiclink]: ./Basic/httpandsocket.md
 
 # Today I Learned 🤠
 
@@ -19,6 +20,9 @@
 **3. 정리는 꾸준히하기**   
 **4. 커밋 메세지는 이해할 수 있게 한글로**   
 **5. 문장의 끝은 항상 ~이다. 로 통일**
+
+## Basic 🤖
+- [Basic | HTTP 통신과 Socket 통신][basiclink]
 
 ## JavaScript 👨‍💻
 - [JavaScript | 기본 문법][javascriptlink]
@@ -45,4 +49,4 @@
 ## Others 🎸
 - [개발하다 모르겠는 용어 정리][Wordslink]
 
-<!-- 추가할 것 : Jest, Redux -->
+<!-- 추가할 것 : React(수정), http 통신, Jest, Redux -->
