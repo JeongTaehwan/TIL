@@ -65,6 +65,4 @@ const value = useContext(MyContext);
 - 틀린 사용: useContext(MyContext.Provider)
 ---
 
-**피드백은 언제나 환영입니다! 😇**   
-**오타나 코드에 오류가 있으면 issue를 남겨주세요! 😁**   
 **출처 : React 공식 문서**
