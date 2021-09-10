@@ -14,6 +14,7 @@
 [designpatternlinktwo]: ./Design_Pattern/MVC.md
 [basiclink]: ./Basic/httpandsocket.md
 [basiclinktwo]: ./Basic/ssrandcsr.md
+[basiclinkthree]: ./Basic/jwt.md
 
 # Today I Learned 🤠
 
@@ -26,6 +27,7 @@
 ## Basic 🤖
 - [Basic | HTTP 통신과 Socket 통신][basiclink]
 - [Basic | SSR 과 CSR][basiclinktwo]
+- [Basic | JWT][basiclinkthree]
 
 ## JavaScript 👨‍💻
 - [JavaScript | 기본 문법][javascriptlink]
