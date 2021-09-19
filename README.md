@@ -15,6 +15,7 @@
 [basiclink]: ./Basic/httpandsocket.md
 [basiclinktwo]: ./Basic/ssrandcsr.md
 [basiclinkthree]: ./Basic/jwt.md
+[basiclinkfour]: ./Basic/restapi.md
 
 # Today I Learned 🤠
 
@@ -28,6 +29,7 @@
 - [Basic | HTTP 통신과 Socket 통신][basiclink]
 - [Basic | SSR 과 CSR][basiclinktwo]
 - [Basic | JWT][basiclinkthree]
+- [Basic | REST API][basiclinkfour]
 
 ## JavaScript 👨‍💻
 - [JavaScript | 기본 문법][javascriptlink]
