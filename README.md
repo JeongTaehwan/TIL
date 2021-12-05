@@ -37,7 +37,7 @@
 - [Basic | REST API][basiclinkfour]
 - [Basic | DOM][basiclinkfive]
 - [Basic | 객체 지향 프로그래밍이란?][basiclinksix]
-- [Basic | 프로세스와 스레드의 차이][basiclinkseven]
+- [Basic | 프로세스와 스레드][basiclinkseven]
 - [Basic | 멀티프로세스와 멀티스레드][basiclinkeight]
 
 ## JavaScript 👨‍💻
