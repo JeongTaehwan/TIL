@@ -46,7 +46,7 @@
 - [JavaScript | 유용한 문법][javascriptlinktwo]
 - [JavaScript | 비동기처리][javascriptlinkthree]
 
-## Sass 🌈
+## Sass 🌈 
 
 - [Sass | 기본 문법][sasslink]
 
