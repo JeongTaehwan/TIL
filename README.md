@@ -20,6 +20,7 @@
 [basiclinksix]: ./Basic/oborprog.md
 [basiclinkseven]: ./Basic/processthread.md
 [basiclinkeight]: ./Basic/multiprocess.md
+[basiclinknine]: ./Basic/oauth.md
 
 # Today I Learned 🤠
 
@@ -39,6 +40,7 @@
 - [Basic | 객체 지향 프로그래밍이란?][basiclinksix]
 - [Basic | 프로세스와 스레드][basiclinkseven]
 - [Basic | 멀티프로세스와 멀티스레드][basiclinkeight]
+- [Basic | OAuth란?][basiclinknine]
 
 ## JavaScript 👨‍💻
 
@@ -46,7 +48,7 @@
 - [JavaScript | 유용한 문법][javascriptlinktwo]
 - [JavaScript | 비동기처리][javascriptlinkthree]
 
-## Sass 🌈 
+## Sass 🌈
 
 - [Sass | 기본 문법][sasslink]
 
