@@ -97,4 +97,39 @@ export default function FirstPost() {
 
 ---
 
-**출처 : Next 공식 문서**
+## getStaticProps & getServerSideProps란 ?
+
+**getStaticProps**
+
+> 정적 페이지 생성(SSG) 시 활용하는 메서드이다. 해당 메서드는 번들링(빌드) 단계에서 데이터 패칭이 이루어진다.
+
+```javascript
+export async function getStaticProps(context) {
+  return (
+    props: {}, // Page Component의 Props로 전달되는 객체
+  )
+}
+```
+
+**getStaticProps는 언제 써야 할까?**
+
+- 변하지 않는 공개적인 캐시 데이터를 가져올 필요가 있을 떄
+- SEO를 필요로 하는 웹사이트이며 CDN 서버에 정적 페이지 배포가 필요할 때
+
+**getServerSideProps**
+
+> 서버 사이드 렌더링(SSR) 시 활용하는 메서드이다. 해당 메서드는 런타임 환경에서 페이지에 접근 시 서버 측에서 실행된다.
+
+```javascript
+export async function getServerSideProps(context) {
+  return (
+    props: {}, // Page Component의 Props로 전달되는 객체
+  )
+}
+```
+
+**getServerSideProps는 언제 써야 할까?**
+
+- 미리 외부로 부터 데이터를 요청하여 페이지에 렌더링이 필요한 경우에 사용한다.
+- 단, `getServerSideProps` 는 페이지 컴포넌트에 접근할 때마다 서버에서 항상 실행되기 때문에 `getStaticProps` 보다 속도가 느리고 추가 구성 없이는 결과 데이터를 캐싱할 수 없다.
+- 데이터를 미리 렌더링 할 필요가 없는 경우 클라이언트 측에서 데이터를 패칭하는 것이 더 효율적이다.
