@@ -21,6 +21,7 @@
 [basiclinkseven]: ./Basic/processthread.md
 [basiclinkeight]: ./Basic/multiprocess.md
 [basiclinknine]: ./Basic/oauth.md
+[inlink]: ./Internet/ip.md
 
 # Today I Learned 🤠
 
@@ -41,6 +42,10 @@
 - [Basic | 프로세스와 스레드][basiclinkseven]
 - [Basic | 멀티프로세스와 멀티스레드][basiclinkeight]
 - [Basic | OAuth란?][basiclinknine]
+
+## Internet Network 📡
+
+- [Internet Network | IP][inlink]
 
 ## JavaScript 👨‍💻
 
