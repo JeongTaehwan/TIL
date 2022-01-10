@@ -24,6 +24,7 @@
 [inlink]: ./Internet/ip.md
 [inlinktwo]: ./Internet/tcpudp.md
 [inlinkthree]: ./Internet/port.md
+[inlinkfour]: ./Internet/dns.md
 
 # Today I Learned 🤠
 
@@ -50,6 +51,7 @@
 - [Internet Network | IP][inlink]
 - [Internet Network | TCP/UDP][inlinktwo]
 - [Internet Network | PORT][inlinkthree]
+- [Internet Network | DNS][inlinkfour]
 
 ## JavaScript 👨‍💻
 
