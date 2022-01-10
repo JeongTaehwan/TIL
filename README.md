@@ -22,6 +22,7 @@
 [basiclinkeight]: ./Basic/multiprocess.md
 [basiclinknine]: ./Basic/oauth.md
 [inlink]: ./Internet/ip.md
+[inlinktwo]: ./Internet/tcpudp.md
 
 # Today I Learned 🤠
 
@@ -46,6 +47,7 @@
 ## Internet Network 📡
 
 - [Internet Network | IP][inlink]
+- [Internet Network | TCP/UDP][inlinktwo]
 
 ## JavaScript 👨‍💻
 
