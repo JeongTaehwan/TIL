@@ -26,6 +26,7 @@
 [inlinktwo]: ./Internet/tcpudp.md
 [inlinkthree]: ./Internet/port.md
 [inlinkfour]: ./Internet/dns.md
+[techinterview]: ./TechInterview/interview.md
 
 # Today I Learned 🤠
 
@@ -86,6 +87,10 @@
 ## Others 🎸
 
 - [개발하다 모르겠는 용어 정리][wordslink]
+
+## Tech Interview 🕵🏻
+
+- [기술면접대비][techinterview]
 
 ---
 
