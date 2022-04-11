@@ -13,7 +13,7 @@
 [designpatternlink]: ./Design_Pattern/Design_Pattern.md
 [designpatternlinktwo]: ./Design_Pattern/MVC.md
 [basiclink]: ./Basic/httpandsocket.md
-[basiclinktwo]: ./Basic/ssrandcsr.md
+[basiclinktwo]: https://taepuwan.tistory.com/2
 [basiclinkthree]: ./Basic/jwt.md
 [basiclinkfour]: ./Basic/restapi.md
 [basiclinkfive]: ./Basic/dom.md
