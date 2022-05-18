@@ -151,3 +151,11 @@ type Window = {
 > interface는 객체에서만 사용 가능
 
 ---
+
+13. React Custom Hook
+
+> 반복되는 hook 활용 메소드들을 줄여 더 간결하고 보기좋은 코드를 만드는 것이 custom hook 이다. 개발자 본인이 직접 만드는 hook이다.
+
+> custom hooks의 이름은 무조건 use로 시작해야한다.
+
+---
