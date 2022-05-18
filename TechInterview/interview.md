@@ -112,3 +112,42 @@
 > 예를들어, Tv랑 Tv방송국이 있다고 가정했을때, Tv방송국이 일정한 시간 단위로 영상에 대한 프레임을 계속해서 방출(emit)하고 TV는 방송국을 관찰하고 있다가 새로운 영상을 방출하면 이를 획득하는 방식이다. 여기서 방송국의 역할이 옵저버블, Tv가 옵저버, 영상프레임이 Notification이다.
 
 ---
+
+12. **Typescript 장점**
+
+> 정적 타입 지원 : Typescript는 정적 타입을 제공해서 작성자의 의도를 좀 더 명확하게 표시할 수 있고 컴파일 단계에서 오류를 잡아준다.
+
+> 도구의 지원 : IDE등의 환경에서 편하게 사용할 수 있게 지원을 해준다.
+
+> 강력한 객체지향 프로그래밍 지원 : 인터페이스, 제너릭등과 같은 강력한 객체지향 프로그래밍 지원은 크고 복잡한 프로젝트의 코드 기반을 쉽게 구성할 수 있도록 도운다.
+
+12-1. **Interface와 type의 차이**
+
+> 선언적 확장 : type은 새로운 선언을 하기 위해서 같은 이름으로 확장을 할 수 없지만, interface는 같은 이름으로 선언적 확장이 가능하다.
+
+```ts
+interface Window {
+  title: string;
+}
+
+interface Window {
+  ts: TypeScriptAPI;
+}
+
+const src = 'const a = "Hello World"';
+window.ts.transpileModule(src, {});
+```
+
+```ts
+type Window = {
+  title: string;
+};
+
+type Window = {
+  ts: TypeScriptAPI;
+};
+```
+
+> interface는 객체에서만 사용 가능
+
+---
