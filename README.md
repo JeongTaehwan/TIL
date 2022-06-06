@@ -9,6 +9,7 @@
 [reactlinkfour]: ./React/ReactRouter.md
 [reactlinkfive]: ./React/Recoil.md
 [reactlinksix]: ./React/Next.md
+[reactlinkseven]: https://taepuwan.tistory.com/4
 [typescriptlink]: ./Typescript/typescript.md
 [designpatternlink]: ./Design_Pattern/Design_Pattern.md
 [designpatternlinktwo]: ./Design_Pattern/MVC.md
@@ -74,6 +75,7 @@
 - [React | React Router][reactlinkfour]
 - [React | Recoil][reactlinkfive]
 - [React | Next][reactlinksix]
+- [React | Recoil Redux 차이점][reactlinkseven]
 
 ## Typescript 🔎
 
