@@ -23,6 +23,7 @@
 [basiclinkeight]: ./Basic/multiprocess.md
 [basiclinknine]: ./Basic/oauth.md
 [basiclinkten]: ./Basic/uri.md
+[basiclinkeleven]: https://taepuwan.tistory.com/5
 [inlink]: ./Internet/ip.md
 [inlinktwo]: ./Internet/tcpudp.md
 [inlinkthree]: ./Internet/port.md
@@ -49,6 +50,7 @@
 - [Basic | 멀티프로세스와 멀티스레드][basiclinkeight]
 - [Basic | OAuth란?][basiclinknine]
 - [Basic | URI][basiclinkten]
+- [Basic | .map() 메서드란?][basiclinkeleven]
 
 ## Internet Network 📡
 
