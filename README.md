@@ -24,6 +24,7 @@
 [basiclinknine]: ./Basic/oauth.md
 [basiclinkten]: ./Basic/uri.md
 [basiclinkeleven]: https://taepuwan.tistory.com/5
+[basiclinktwelve]: ./Basic/cicd.md
 [inlink]: ./Internet/ip.md
 [inlinktwo]: ./Internet/tcpudp.md
 [inlinkthree]: ./Internet/port.md
@@ -51,6 +52,7 @@
 - [Basic | OAuth란?][basiclinknine]
 - [Basic | URI][basiclinkten]
 - [Basic | .map() 메서드란?][basiclinkeleven]
+- [Basic | CI/CD][basiclinktwelve]
 
 ## Internet Network 📡
 
